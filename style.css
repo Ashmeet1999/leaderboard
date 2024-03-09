@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:wght@600&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Raleway:ital,wght@1,100&family=Roboto:wght@300;400&family=Tilt+Neon&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+body{
+    background-image: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    color: black;
+}
+.heading{
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-decoration: 3px solid underline;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(208, 198, 198, 0.5);
+    color: black; 
+}
+form{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+input{
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid black;
+    outline: none;
+    height: 2.5rem;
+    width: 12rem;
+    border-radius: .5rem;
+    color: black;
+    background-color: transparent;
+    letter-spacing: 2px;
+}
+form input::placeholder{
+    color: black;
+}
+.scoreboard .player-country{
+    text-transform: capitalize;
+}
+form button {
+    width: 10rem;
+    height: 3rem;
+    transition: all .5s ease;
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    border-radius: .5rem;
+    border: 1px solid black;
+    letter-spacing: 2px;
+}
+form button:hover{
+    background-color: black;
+    color: black;
+    cursor: pointer;
+}
+.error{
+    margin-bottom: 1rem;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    display: none;
+    text-decoration: 1px solid underline;
+}
+.all-scoreBoard-container{
+    width: 80%;
+    max-width: 950px;
+    gap: 5rem;
+}
+.scoreboard{
+    height: 5.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    border-radius: .5rem;
+    color: black;
+    background: linear-gradient(to left,rgb(139, 184, 139), rgb(70, 212, 70));
+    box-shadow: 2px 2px 6px rgba(139, 184, 139,.5);
+}
+.playerName{
+    font-weight: 700;
+}
+.main-time{
+    font-size: 12px;
+    font-weight: 700px;
+}
+.scoreboard-btn-container{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.scoreboard-btn-container button{
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-radius: .5rem;
+    color: black;
+    border: 1px dotted black;
+    font-weight: 600;
+}
+.scoreboard-btn-container button:hover{
+    transition: .3s ease;
+    transform: scale(1.2);
+    background-color: rgb(107, 216, 107);
+    color: rgb(92, 218, 92);
+    cursor: pointer;
+}

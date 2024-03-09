@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeaderBoard</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <audio src="./addOrDelete.wav" class="addOrDeleteSound"></audio>
+    <audio src="./error.mp3" class="errorsound"></audio>
+
+    <main>
+        <h1 class="heading">Leader<span>Board</span></h1>
+    <form action="" autocomplete="on">
+        <input type="text" id="FirstName" placeholder="First Name">
+        <input type="text" id="lastName" placeholder="Last Name">
+        <input type="text" id="country" placeholder="country">
+        <input type="number" id="score" placeholder="Player Score" min="0">
+        <button class="addPlayer">Add Player</button>
+    </form>
+    <p class="error">All fields are required*</p>
+    <div class="all-scoreBoard-container">
+        <div class="scoreboard">
+            <div>
+                <p class = "playerName">Akhil Sharma</p>
+                <p class="main-time">Oct 2024, 18:05:12</p>
+                </div>
+                <p class="player-country">India</p>
+                <p class="playerScore">90</p>
+                <div class="scoreboard-btn-container">
+                    <button>🗑️</button>
+                    <button>+5</button>
+                    <button>-5</button>
+                </div>
+        </div>
+        <div class="scoreboard">
+            <div>
+                <p class = "playerName">Ashmeet Kaur</p>
+                <p class="main-time">Sept 2024, 12:11:45</p>
+                </div>
+                <p class="player-country">India</p>
+                <p class="playerScore">95</p>
+                <div class="scoreboard-btn-container">
+                    <button>🗑️</button>
+                    <button>+5</button>
+                    <button>-5</button>
+                </div>
+        </div>
+        <div class="scoreboard">
+            <div>
+                <p class = "playerName">Rahul Sharma</p>
+                <p class="main-time">Aug 2024, 15:38:59</p>
+                </div>
+                <p class="player-country">India</p>
+                <p class="playerScore">90</p>
+                <div class="scoreboard-btn-container">
+                    <button>🗑️</button>
+                    <button>+5</button>
+                    <button>-5</button>
+                </div>
+        </div>
+    </div>
+    </main>
+    
+    <script src="./script.js"></script>
+
+</body>
+</html>
